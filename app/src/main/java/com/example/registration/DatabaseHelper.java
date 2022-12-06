@@ -33,7 +33,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_USER_CEL = "user_cel";
 
 
-    //+ COLUMN_USER_USER+ " TEXT,"
     // create table sql query
     private String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "("
             + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+  COLUMN_USER_NAME + " TEXT, "
@@ -180,10 +179,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    //tipidhomes
 
 
-    //metoda qe therret profilin e userit
     @SuppressLint("Range")
     public List<User> getUserProfil(String email) {
         // array of columns to fetch
